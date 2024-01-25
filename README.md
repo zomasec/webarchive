@@ -8,6 +8,8 @@ To use `webarchive` in your Go project, simply run:
 
 ```bash
 go get -u github.com/zomasec/webarchive
+#use this if not working
+go install github.com/zomasec/webarchive@latest 
 ```
 
 ## Usage 
