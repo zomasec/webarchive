@@ -9,6 +9,11 @@ To use `webarchive` in your Go project, simply run:
 ```bash
 go get -u github.com/zomasec/webarchive
 ```
+or install it manually using :
+```bash
+cd /usr/lib/go-*/src/
+sudo git clone https://github.com/zomasec/webarchive
+```
 
 ## Usage 
 
