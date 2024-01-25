@@ -1,5 +1,5 @@
 # webarchive
-Webarchive is a Go package for interacting with the Wayback Machine's CDX API and integrate web archive utilities into your Golang projects.
+Webarchive is a Go package for pentesters and developers to interacting with the Wayback Machine's CDX API and integrate web archive utilities into your Golang projects.
 
 ## Installation
 
