@@ -1,3 +1,4 @@
+[![Go Reference](https://pkg.go.dev/badge/github.com/zomasec/webarchive.svg)](https://pkg.go.dev/github.com/zomasec/webarchive)
 # WebArchive v1.0.0
 Webarchive is a Go package for pentesters and developers to interacting with the Wayback Machine's CDX API and integrate web archive utilities into your Golang projects.
 
