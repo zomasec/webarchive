@@ -23,7 +23,7 @@ type Result struct {
 }
 
 // NewArchive creates a new Archive instance with the specified query and optional HTTP client.
-func NewArchive(query string, client *http.Client) *Archive {
+func NewArchive(query string, client *http.Client) (*Archive, error) {
 	defaultClient := &http.Client{
 		Timeout: time.Second * 10,
 	}
@@ -34,7 +34,7 @@ func NewArchive(query string, client *http.Client) *Archive {
 	return &Archive{
 		Query:      query,
 		HTTPClient: client,
-	}
+	}, nil
 }
 
 // FetchURLs fetches URLs from the Wayback Machine for the specified query.
