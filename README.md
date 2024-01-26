@@ -1,6 +1,6 @@
 [![Go Reference](https://pkg.go.dev/badge/github.com/zomasec/webarchive.svg)](https://pkg.go.dev/github.com/zomasec/webarchive) [![Go Report Card](https://goreportcard.com/badge/github.com/zomasec/webarchive)](https://goreportcard.com/report/github.com/zomasec/webarchive)
 # WebArchive v1.0.0
-Webarchive is a Go package for pentesters and developers to interacting with the Wayback Machine's CDX API and integrate web archive utilities into your Golang projects.
+Webarchive is a Go package for pentesters and developers to interacting with the Wayback Machine's CDX API and integrate web archive utilities into your Golang projects , Developed by Hazem El-Sayed (ZomaSec).
 
 ## Installation
 
@@ -13,6 +13,10 @@ or install it manually using :
 ```bash
 cd /usr/lib/go-*/src/
 sudo git clone https://github.com/zomasec/webarchive
+```
+But if you use the manual installation then you will import it like :
+```go
+import "webarchive"
 ```
 
 ## Usage 
