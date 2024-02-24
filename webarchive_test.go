@@ -1,9 +1,9 @@
 // The full code is still under testing
-package webarchive2
+package webarchive
 
 import (
 	"net/url"
-	"testify/assert"
+	"github.com/stretchr/testify/assert"
 	"testing"
 )
 
@@ -13,7 +13,7 @@ func TestHasParamWithParam(t *testing.T) {
 	assert.NoError(t, err)
 
 	// Call the hasParam function
-	result := hasParam(u)
+	result := hasParams(u)
 
 	// Assertions
 	assert.True(t, result)
@@ -24,7 +24,7 @@ func TestHasParamWithoutParam(t *testing.T) {
 	assert.NoError(t, err)
 
 	// Call the hasParam function
-	result := hasParam(u)
+	result := hasParams(u)
 
 	// Assertions
 	assert.False(t, result)

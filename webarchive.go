@@ -19,7 +19,8 @@ type Archive struct {
 
 // Result represents the result of fetching URLs from the Wayback Machine.
 type Result struct {
-	URLs []*url.URL // URLs is a slice of parsed URLs retrieved from the Wayback Machine.
+	URLs 	   []*url.URL // URLs is a slice of parsed URLs retrieved from the Wayback Machine.
+	StringURLs []string   // Strign URLs is a slice of non parsed URLs (as string) retrieved from the Wayback Machine.
 }
 
 // NewArchive creates a new Archive instance with the specified query and optional HTTP client.
@@ -113,4 +114,11 @@ func (r *Result) FilterByExtension(ext string) ([]*url.URL, error) {
 		}
 	}
 	return filteredURLs, nil
+}
+
+func (r *Result) FormatAsString() []string {
+	for _, url := range r.URLs {
+		r.StringURLs = append(r.StringURLs, url.String())
+	}
+	return r.StringURLs
 }
