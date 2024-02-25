@@ -28,7 +28,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/zomasec/webarchive/"
+	"github.com/zomasec/webarchive"
 )
 
 func main() {
